@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/flower.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+</head>
+<body>
+    <h1 class="title" id="top"><img src="../img/AM.jpg" alt="Logo" class="logo" width="50px">Data Visualization</h1>
+    <div class="tab">
+        <a href="../index.html" class="tablinks">Home</a>
+        <a href="../html/resume.html" class="tablinks">Resume</a>
+        <a href="../html/dataviz.html" class="tablinks">Data Visualization</a>
+        <a href="../html/research.html" class="tablinks">Research</a>
+    </div>
+
+    <div class="image-container">
+        <img src="../img/river.jpg" alt="Banner Image" class="banner" height="700" width="100%">
+        <div class="image-text-box">
+            <h1 style="color: #0c4235;">Data Visualization</h1>
+        </div>
+    </div>
+
+    <!-- make another section for just static plots -->
+    <!-- change the tableau to be YOUR tableau projects -->
+    <div class="datatab">
+        <button class="datatablinks" onclick="openDataTab(event, 'All')">All</button>
+        <button class="datatablinks" onclick="openDataTab(event, 'ReplicationInR')">Replication in R</button>
+        <button class="datatablinks" onclick="openDataTab(event, 'GGplotPlotly')">Plotly</button>
+        <button class="datatablinks" onclick="openDataTab(event, 'RShiny')">R Shiny</button>
+        <button class="datatablinks" onclick="openDataTab(event, 'Tableau')">Tableau</button>
+    </div>
+
+    <!-- Replication in R Section -->
+    <div id="ReplicationInR" class="datatabcontent">
+        <h1 style="text-align: center;">Replication in R</h1>
+        <div class="two-column-layout">
+            <div>
+                <p>Originals</p>
+                <img src="../img/gapminderog.jpg" alt="Gapminder Original" width="700px">
+                <br><br>
+                <img src="../img/NYTog.jpg" alt="New York Times Original" width="700px">
+                <br><br>
+                <img src="../img/nbaog.png" alt="NBA Original" width="700px">
+                <br><br>
+                <img src="../img/candidateog.jpg" alt="Political Candidate Polling Original" width="700px">
+            </div>
+            <div>
+                <p>Replications</p>
+                <img src="../img/gapminder_copy.jpg" alt="Gapminder Replica" width="700px">
+                <br><br>
+                <img src="../img/nytcopy.jpg" alt="New York Times Replica" width="700px">
+                <br><br>
+                <img src="../img/nbacopy.jpg" alt="NBA Replica" width="700px">
+                <br><br>
+                <img src="../img/candidatecopy.jpg" alt="Political Candidate Polling Replica" width="700px">
+            </div>
+        </div>
+    </div>
+
+    <!-- GGplot Plotly Section -->
+    <div id="GGplotPlotly" class="datatabcontent">
+        <h1 style="text-align: center;">Plotly</h1>
+        <iframe src="../img/Q2DPlot_widget.html" width="100%" height="700px" frameborder="0"></iframe>
+        <iframe src="../img/Q3BPlot_widget.html" width="100%" height="700px" frameborder="0"></iframe>
+        <iframe src="../img/Q4APlot_widget.html" width="100%" height="700px" frameborder="0"></iframe>
+    </div>
+
+    <!-- R Shiny Section -->
+    <div id="RShiny" class="datatabcontent">
+        <h1 style="text-align: center;">R Shiny</h1>
+        <iframe src="https://abigailpmceuen.shinyapps.io/ProblemSet11/" width="90%" height="1000px" frameborder="0"></iframe>
+    </div>
+
+    <!-- Tableau Section -->
+    <div id="Tableau" class="datatabcontent">
+        <h1 style="text-align: center;">Tableau</h1>
+        <div class='tableauPlaceholder' id='viz1712300672302' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InternationalWomensDay-HealthcareSalaries&#47;InternationalWomensDay2023&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='InternationalWomensDay-HealthcareSalaries&#47;InternationalWomensDay2023' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InternationalWomensDay-HealthcareSalaries&#47;InternationalWomensDay2023&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1712300672302');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='950px';vizElement.style.height='1177px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <div class="footer">
+        <a href="#top" style="color: #0c4235;">Back to top</a>
+        <br>
+        <a href="https://www.linkedin.com/in/abigailmceuen/" target="_blank"><img src="../img/linkedin.png" alt="linkedin" width="40px"></a>
+        <a href="mailto:abigailpmceuen@gmail.com" target="_blank"><img src="../img/gmail.png" alt="gmail" width="40px"></a>
+        <p>Copyright © Abigail McEuen 2024</p>
+    </div>
+
+    <script>
+        function openDataTab(evt, tabName) {
+            var i, datatabcontent, datatablinks;
+            datatabcontent = document.getElementsByClassName("datatabcontent");
+            for (i = 0; i < datatabcontent.length; i++) {
+                datatabcontent[i].style.display = "none";
+            }
+            datatablinks = document.getElementsByClassName("datatablinks");
+            for (i = 0; i < datatablinks.length; i++) {
+                datatablinks[i].className = datatablinks[i].className.replace(" active", "");
+            }
+            if (tabName === "All") {
+                for (i = 0; i < datatabcontent.length; i++) {
+                    datatabcontent[i].style.display = "block";
+                }
+                evt.currentTarget.className += " active";
+            } else {
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        }
+    </script>
+
+</body>
+</html>
